@@ -8,7 +8,7 @@ body
     font-family: 'BIZ-UDPGothic';
 }
 
-table
+.Table
 {
     border-collapse: collapse;
     font-size: 18px;
@@ -17,7 +17,12 @@ table
     margin-top: 40px;
     margin-bottom: 40px;
 
-    overflow-x: auto;
+    min-width: 1200px;
+}
+
+.Table_Div
+{
+    overflow-x: scroll;
 }
 
 th, td
