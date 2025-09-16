@@ -15,22 +15,27 @@
     </div>
     <div class="SiteTitle">レース順位 - 2025 Rd5 GT500クラス</div>
     <div>
-      <select id="year-select" class="PullDown" onchange="navigatePage()">
+      <select id="year-select" class="PullDown" onchange="navigatePage(this.value, '', 'GT500')">
         <option value="2025" selected>2025</option>
         <option value="2024">2024</option>
         <option value="2023">2023</option>
       </select>
-      <select id="round-select" class="PullDown" onchange="navigatePage()">
-        <option value="Rd5" selected>Rd5</option>
-        <option value="Rd4">Rd4</option>
-        <option value="Rd3">Rd3</option>
-      </select>
-      <select id="class-select" class="PullDown" onchange="navigatePage()">
-        <option value="GT500" selected>GT500</option>
-        <option style="background-color: yellow;" value="GT300">GT300</option>
+      <select class="PullDown" onchange="navigatePage('2025', this.value, 'GT500')">
+        <option selected>Rd5</option>
+        <option>Rd4</option>
+        <option>Rd3</option>
       </select>
     </div>
     <hr>
+    <div class="ClassTab"> <!--ここはGT500とGT300のやつ-->
+      <a class="ClassTabLink Active500">Round5 SUZUKA GT500</a>
+      <a href="GT300_race.html" class="ClassTabLink Disable300">Round5 SUZUKA GT300</a>
+    </div>
+    <div class="SessionTab"> <!--ここはセッションの矢印のやつ(?)-->
+      <a href="" class="SessionTabLink">9月13日(土)公式予選</a>
+      <a class="SessionTabLink Active500">9月14日(日)決勝レース</a>
+      <a class="SessionTabLink Disable"></a>
+    </div>
     <div class="Table_Div">
       <table border="1" class="Table">
           <tr>
@@ -114,7 +119,7 @@
             <td class="Table_Align_Center">8</td>
           </tr>
       </table>
-      <div class="MainText" style="line-height: 133%;">
+      <div class="MainText ResultDiscription" style="line-height: 133%;">
         <p>ファステストラップ: CarNo255 / ほわいとちょこ - 29/35周 1'44.991(平均199.114km/h)
             <br>レース開始時刻 - 21:46:44 / レース終了時刻 - 22:49:29
         </p>

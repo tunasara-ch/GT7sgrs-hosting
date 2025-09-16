@@ -1,14 +1,18 @@
-function navigatePage() {
-  // 年とラウンドのドロップダウン要素を取得
-  const yearSelect = document.getElementById('year-select');
-  const roundSelect = document.getElementById('round-select');
-  const classSelect = document.getElementById('class-select');
-  
-  // 選択された値を取得
-  const selectedYear = yearSelect.value;
-  const selectedRound = roundSelect.value;
-  const selectedClass = classSelect.value;
-  
+function navigatePage(Year = '2025', Round = '', Class = 'GT500') {
+
+  if (Round === '') {
+    switch (Year) {
+      case '2025':
+        Round = 'Rd5';
+        break;
+      case '2024':
+        Round = 'Rd8';
+        break;
+      case '2023':
+        Round = 'Rd9';
+        break;
+    }
+  }
   // URLを作成してページを遷移
-  window.location.href = `/result/${selectedYear}/${selectedRound}/${selectedClass}_race.html`;
+  window.location.href = `/result/${Year}/${Round}/${Class}_race.html`;
 }
