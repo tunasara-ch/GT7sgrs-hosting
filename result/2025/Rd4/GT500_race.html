@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../main.css" />
+    <title>GT7sgrs - 順位</title>
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/vnd.microsoft.icon"/>
+    <script src="../../../result.js"></script>
+  </head>
+  <body>
+    <div class="Tab">
+      <button onclick="location.href='../../../result.html'" class="TabLink">レース順位</button>
+      <button onclick="" class="TabLink">スケジュール</button>
+    </div>
+    <div class="SiteTitle">レース順位 - 2025 Rd4 GT500クラス</div>
+    <div>
+      <select id="year-select" class="TabLink" onchange="navigatePage()">
+        <option value="2025" selected>2025</option>
+        <option value="2024">2024</option>
+        <option value="2023">2023</option>
+      </select>
+      <select id="round-select" class="TabLink" onchange="navigatePage()">
+        <option value="Rd5">Rd5</option>
+        <option value="Rd4" selected>Rd4</option>
+        <option value="Rd3">Rd3</option>
+      </select>
+      <select id="class-select" class="TabLink" onchange="navigatePage()">
+        <option value="GT500" selected>GT500</option>
+        <option style="background-color: yellow;" value="GT300">GT300</option>
+      </select>
+    </div>
+    <hr>
+    <div class="Table_Div">
+      <table border="1" class="Table">
+          <tr>
+              <th width="50px">Po.</th>
+              <th width="50px">No.</th>
+              <th width="415px">車両名</th>
+              <th width="200px">ドライバー</th>
+              <th width="125px">タイム</th>
+              <th width="110px">ベストラップ</th>
+              <th width="50px">タイヤ</th>
+              <th width="50px">SW</th>
+          </tr>
+          <tr>
+            <td class="Table_Align_Center">1</td>
+            <td class="Table_Align_Center">32</td>
+            <td class="Table_Align_Left">MyGO!!!!! MOTUL Z<br>NISSAN Z GT500</td>
+            <td class="Table_Align_Left">翔</td>
+            <td class="Table_Align_Right">1:08'07.364</td>
+            <td class="Table_Align_Right">1'22.060</td>
+            <td class="Table_Align_Center">MI</td>
+            <td class="Table_Align_Center">44</td>
+          </tr>
+          <tr>
+            <td class="Table_Align_Center">2</td>
+            <td class="Table_Align_Center">14</td>
+            <td class="Table_Align_Left">Hololive Hoshimachi NSX-GT<br>Honda NSX-GT</td>
+            <td class="Table_Align_Left">ASUMU<br>soil609</td>
+            <td class="Table_Align_Right">2.296</td>
+            <td class="Table_Align_Right">1'22.243<br>-</td>
+            <td class="Table_Align_Center">MI</td>
+            <td class="Table_Align_Center">40</td>
+          </tr>
+          <tr>
+            <td class="Table_Align_Center">3</td>
+            <td class="Table_Align_Center">53</td>
+            <td class="Table_Align_Left">SAGT × TGGT NSX-GT<br>Honda NSX-GT</td>
+            <td class="Table_Align_Left">ケダカキハシャ</td>
+            <td class="Table_Align_Right">4.372</td>
+            <td class="Table_Align_Right">1'22.400</td>
+            <td class="Table_Align_Center">BS</td>
+            <td class="Table_Align_Center">76</td>
+          </tr>
+          <tr>
+            <td class="Table_Align_Center">4</td>
+            <td class="Table_Align_Center">4</td>
+            <td class="Table_Align_Left">KeePer SyoRacing GR Supra<br>TOYOTA GR Supra GT500</td>
+            <td class="Table_Align_Left">ぷでぃん</td>
+            <td class="Table_Align_Right">45.783</td>
+            <td class="Table_Align_Right">1'22.704</td>
+            <td class="Table_Align_Center">BS</td>
+            <td class="Table_Align_Center">22</td>
+          </tr>
+          <tr>
+            <td class="Table_Align_Center">5</td>
+            <td class="Table_Align_Center">23</td>
+            <td class="Table_Align_Left">MOTUL AUTECH Z<br>NISSAN Z GT500</td>
+            <td class="Table_Align_Left">Ral</td>
+            <td class="Table_Align_Right">53.501</td>
+            <td class="Table_Align_Right">1'21.351</td>
+            <td class="Table_Align_Center">BS</td>
+            <td class="Table_Align_Center">0</td>
+          </tr>
+          <tr>
+            <td class="Table_Align_Center">6</td>
+            <td class="Table_Align_Center">100</td>
+            <td class="Table_Align_Left">RAYBRIG S Engineering CIVIC TYPE R-GT<br>Honda CIVIC TYPE R-GT</td>
+            <td class="Table_Align_Left">有楽サトリ</td>
+            <td class="Table_Align_Right">1'08.345</td>
+            <td class="Table_Align_Right">1'22.163</td>
+            <td class="Table_Align_Center">BS</td>
+            <td class="Table_Align_Center">2</td>
+          </tr>
+          <tr>
+            <td class="Table_Align_Center">7</td>
+            <td class="Table_Align_Center">255</td>
+            <td class="Table_Align_Left">HowaChocoRacing NSX-GT<br>Honda NSX-GT</td>
+            <td class="Table_Align_Left">ほわいとちょこ</td>
+            <td class="Table_Align_Right">1Lap</td>
+            <td class="Table_Align_Right">1'22.980</td>
+            <td class="Table_Align_Center">YH</td>
+            <td class="Table_Align_Center">0</td>
+          </tr>
+      </table>
+      <div class="MainText" style="line-height: 133%;">
+        <p>ファステストラップ: CarNo23 / Ral - 36/40周 1'21.351(平均217.369km/h)
+            <br>レース開始時刻 - 22:16:53 / レース終了時刻 - 23:24:14
+            <br>FCY導入時刻 - (1) 22:18:44(0Lap)～22:19:34(1Lap) / (2) 22:24:54(3Lap)～22:23:39(3Lap) / (3) 22:46:04(14Lap)～22:47:24(14Lap)
+            <br>　　　　　　　　　　　(4) 22:53:34(19Lap)～22:54:34(19Lap) / (5) 22:57:29(22Lap)～22:58:44(22Lap) / (6) 23:01:04(24Lap)～23:02:04(24Lap)
+            <br>　　　　　　　　　　　(7) 23:05:44(25Lap)～23:06:34(26Lap)
+            <br>SC導入時刻 - 22:28:10(7Lap)～22:40:11(11Lap)
+        </p>
+        <p>フォーメーションラップを1周追加し、決勝レースを40周とした。</p>
+        <p>
+          4号車 - ぷでぃん / 決勝結果に10秒加算(Lap4 メインストレート - 23号車に対する危険なドライブ行為)<br>
+          　　　　　　　　　　　　　 決勝結果に5秒加算(Lap12 最終コーナー - 32号車に対する危険なドライブ行為)<br>
+          　　　　　　　　　　　　　 決勝結果に10秒加算(FCY[6回目]速度超過 +28km/h)<br>
+          14号車 - ASUMU / 決勝結果に5秒加算(FCY[3回目]速度超過 +13km/h)<br>
+          　　　　　　　　　　　　　 　 決勝結果に20秒加算(FCY[6回目]速度超過 +50km/h)<br>
+          23号車 - Ral / 決勝結果に20秒加算(FCY[1回目]速度超過 +80km/h)<br>
+          　　　　　　　　　　　 決勝結果に30秒加算(FCY[1回目] 4号車に対する追い越し)<br>
+          　　　　　　　　　　　 決勝結果に10秒加算(FCY[5回目]速度超過 +23km/h)<br>
+          32号車 - 翔 / 決勝結果に10秒加算(Lap40 第5コーナー - 100号車に対する危険なドライブ行為)<br>
+          53号車 - ケダカキハシャ / 決勝結果に30秒加算(FCY[4回目]速度超過 +123km/h)<br>
+          100号車 - 有楽サトリ / 決勝結果に10秒加算(FCY[1回目]速度超過 +23km/h)<br>
+          　　　　　　　　　　　　　　　 　決勝結果に20秒加算(FCY[4回目]速度超過 +52km/h)<br>
+          　　　　　　　　　　　　　　　　 決勝結果に10秒加算(FCY[5回目]速度超過 +37km/h)<br>
+          　　　　　　　　　　　　　　　　 決勝結果に5秒加算(FCY[7回目]速度超過 +14km/h)<br>
+          255号車 - ほわいとちょこ / 決勝結果に20秒加算(FCY[2回目]速度超過 +70km/h)<br>
+            　　　　　　　　　　　　　　　 　　　　 決勝結果に10秒加算(FCY[5回目]速度超過 +26km/h)<br>
+        </p>
+        <p>天候: 曇り / コース: ドライ</p>
+      </div>
+    </div>
+  </body>
+</html>

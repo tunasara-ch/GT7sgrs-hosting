@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="main.css" />
     <title>GT7sgrs - 順位</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon"/>
+    <script src="result.js"></script>
   </head>
   <body>
     <div class="Tab">
@@ -13,6 +14,22 @@
       <button onclick="" class="TabLink">スケジュール</button>
     </div>
     <div class="SiteTitle">レース順位 - 2025 GT500 ドライバーズランキング</div>
+    <div>
+      <select id="year-select" class="TabLink" onchange="navigatePage()">
+        <option value="2025">2025</option>
+        <option value="2024">2024</option>
+        <option value="2023">2023</option>
+      </select>
+      <select id="round-select" class="TabLink" onchange="navigatePage()">
+        <option value="Rd5">Rd5</option>
+        <option value="Rd4">Rd4</option>
+        <option value="Rd3">Rd3</option>
+      </select>
+      <select id="class-select" class="TabLink" onchange="navigatePage()">
+        <option value="GT500">GT500</option>
+        <option style="background-color: yellow;" value="GT300">GT300</option>
+      </select>
+    </div>
     <hr>
     <div class="Table_Div">
       <table border="1" class="Table">
