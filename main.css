@@ -43,3 +43,8 @@ th, td
 .Table_Align_Left{text-align: start; line-height: 133%;}
 .Table_Align_Center{text-align: center; line-height: 133%;}
 .Table_Align_Right{text-align: end; line-height: 133%;}
+
+.Table_Number_500{text-align: center; line-height: 133%; background-image: url('resource/image/result/GT500_number.png'); background-repeat: no-repeat; background-position: center; padding-top: 15px;}
+.Table_Number_300{text-align: center; line-height: 133%; background-image: url('resource/image/result/GT300_number.png'); background-repeat: no-repeat; background-position: center; padding-top: 15px;}
+.Table_Standing_500{text-align: center; line-height: 133%; background-image: url('resource/image/result/GT500_Ranking.png'); background-repeat: no-repeat; background-position: center; padding-top: 15px;}
+.Table_Standing_300{text-align: center; line-height: 133%; background-image: url('resource/image/result/GT300_Ranking.png'); background-repeat: no-repeat; background-position: center; padding-top: 15px;}
