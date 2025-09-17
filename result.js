@@ -16,3 +16,7 @@ function navigatePage(Year = '2025', Round = '', Class = 'GT500') {
   // URLを作成してページを遷移
   window.location.href = `/result/${Year}/${Round}/${Class}_race.html`;
 }
+
+function ToResult() {
+  window.location.href = '/result/2025/Rd5/GT500_race.html';
+}

@@ -59,9 +59,9 @@ th, td
 .SessionTabLink:not(:last-child)::after{content: ""; position: absolute; top: 0; right: -15px; width: 0; height: 0; border-style: solid; border-width: 18px 0px 18px 15px; border-color: transparent transparent transparent #555; z-index: 2;}
 
 .SessionTabLink.Active500{background-color: #ef0000;}
-.SessionTabLink.Active500:not(:last-child)::after{border-color: transparent transparent transparent #ef0000; z-index: 2;}
+.SessionTabLink.Active500::after{border-color: transparent transparent transparent #ef0000; z-index: 2;}
 .SessionTabLink.Active300{background-color: #ef9f00;}
-.SessionTabLink.Active300:not(:last-child)::after{border-color: transparent transparent transparent #ef9f00; z-index: 2;}
+.SessionTabLink.Active300::after{border-color: transparent transparent transparent #ef9f00; z-index: 2;}
 
 .SessionTabLink.Disable{background-color: #888; pointer-events: none; cursor: default; width: 100%;}
 
@@ -72,3 +72,24 @@ th, td
 .ClassTabLink.Active300{background-color: #ef9f00; border-right: 1px solid #ccc; align-items: end; justify-content: end;}
 
 .ResultDiscription{max-width: 1200px; margin: auto;}
+
+.ResultMain{display: flex; width: fit-content; margin: auto;}
+
+.ResultSchedule{width: 250px; height: fit-content; margin-left: 50px; border: 1px solid #555; padding: 6px 12px 12px 12px;}
+
+.ResultPullDown{position: relative;}
+
+.ResultPullDown::before,
+.ResultPullDown::after{position: absolute; content: ''; pointer-events: none;}
+.ResultPullDown::before{display: inline-block; right: 0; width: 40px; height: 30px; background-color: #333;}
+.ResultPullDown::after{position: absolute; right: 14px; top: 4px; width: 0; height: 0; border-style: solid; border-width: 12px 6px 10px 6px; border-color: #fff transparent transparent transparent;}
+.ResultPullDown select{appearance: none; width: 250px; height: 30px; border: none; background-color: #cfcfcf; color: #000; cursor: pointer; font-size: 15px; padding-left: 10px;}
+.ResultPullDown:focus-within::before{background-color: #ef0000;}
+.ResultPullDown:hover::before{background-color: #ef0000;}
+.ResultPullDown select:focus{outline: none;}
+.ResultPullDown select option{background-color: #fff; color: #000;}
+
+.ResultSchedule_Space{height: 25px;}
+.ResultSchedule_Link_500, .ResultSchedule_Link_300{display: inline-block; width: 230px; height: 22px; padding: 5px 10px; color: white; background-color: #555; font-size: 15px; text-decoration: none; margin-bottom: 2px; line-height: 22px;}
+.ResultSchedule_Link_500:hover{background-color: #ef0000;}
+.ResultSchedule_Link_300:hover{background-color: #ef9f00;}
