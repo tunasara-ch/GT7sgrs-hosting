@@ -3,3 +3,4 @@ fetch('./header.html')
   .then(html => {
     document.getElementById('header').innerHTML = html;
   });
+

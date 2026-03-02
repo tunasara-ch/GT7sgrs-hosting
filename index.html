@@ -4,10 +4,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
-    <script src="main.js"></script>
+
     <title>GT7sgrs - ホーム</title>
+
+    <link rel="stylesheet" href="main.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon"/>
+
+    <script src="main.js"></script>
+    <script>
+      if (/iPhone|Android|iPad/i.test(navigator.userAgent)) {
+        location.href = './sp/index.html';
+      }
+    </script>
   </head>
 
   <body>

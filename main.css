@@ -100,7 +100,7 @@ main {
 }
 
 
-.Title{margin: auto;  width: 600px; height: 110px; text-align: center; display: block; margin-top: 10px; margin-bottom: 10px; scale: 0.9;}
+.Title{margin: auto; width: 600px; height: 110px; text-align: center; display: block; margin-top: 85px; margin-bottom: 15px; scale: 0.9;}
 .SubHeader{color: red; font-weight: bold; font-size: 32px; margin-top: 12px; margin-bottom: 12px; margin-left: 30px; margin-right: 30px;}
 .MainText{margin-top: 20px; margin-left: 30px; margin-right: 30px; margin-bottom: 20px; font-weight: 400; font-size: 20px;}
 
