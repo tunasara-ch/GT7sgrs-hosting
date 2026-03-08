@@ -2,21 +2,25 @@
     font-family: 'Open Sans';
     font-weight: normal;
     src: url('resource/font/OpenSans-Regular.ttf') format('truetype');
+    font-display: swap;
 }
 @font-face {
     font-family: 'Open Sans';
     font-weight: bold;
     src: url('resource/font/OpenSans-Bold.ttf') format('truetype');
+    font-display: swap;
 }
 @font-face {
     font-family: 'Noto Sans JP';
     font-weight: normal;
     src: url('resource/font/NotoSansJP-Regular.ttf') format('truetype');
+    font-display: swap;
 }
 @font-face {
     font-family: 'Noto Sans JP';
     font-weight: bold;
     src: url('resource/font/NotoSansJP-Bold.ttf') format('truetype');
+    font-display: swap;
 }
 
 body
